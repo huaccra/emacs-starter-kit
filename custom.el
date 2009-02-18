@@ -11,6 +11,7 @@
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(ecb-source-path (quote (("~/Projects" "Projects"))))
  '(ecb-tip-of-the-day nil)
+ '(jde-jdk-registry (quote (("1.6.0.12" . "/opt/sun-jdk-1.6.0.12"))))
  '(scroll-bar-mode (quote right))
  '(untabify-exclude-list (quote (makefile-mode makefile-bsdmake-mode change-log-mode csharp-mode php-mode css-mode html-mode c-mode "Makefile$"))))
 (custom-set-faces

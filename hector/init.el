@@ -52,14 +52,16 @@
 ;;; cedet Configuration
 (load "/usr/share/emacs/site-lisp/cedet/common/cedet" nil t)
 
+;;; jde site-lisp configuration
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/jde/lisp")
+(require 'jde-autoload)
+
 ;;; ECB Configuration 
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/ecb")
 (require 'ecb)
-;; (ecb-options-version "2.32")
-;; (ecb-kill-buffer-clears-history (quote auto))
-;; (ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
-;; (ecb-source-path (quote (("~/Projects" "Projects"))))
-;; (ecb-tip-of-the-day nil)
+
+;; Electric ruby hook
+(add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
 ;; Full screen toggle
 (defun toggle-fullscreen ()
