@@ -60,8 +60,9 @@
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/ecb")
 (require 'ecb)
 
-;; Electric ruby hook
+;; Ruby hooks
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
+(add-hook 'ruby-mode-hook 'whitespace-mode)
 
 ;; Full screen toggle
 (defun toggle-fullscreen ()
@@ -96,6 +97,8 @@
 (global-set-key (kbd "C-q r") 'rinari-rake)
 (global-set-key (kbd "C-q q") 'rinari-sql)
 (global-set-key (kbd "C-q t") 'rinari-test)
+(global-set-key (kbd "C-q x") 'rinari-extract-partial)
+(global-set-key (kbd "M-n") 'cleanup-buffer)
 (global-set-key [f5] 'whitespace-mode)
 (global-set-key [f6] 'split-window-horizontally)
 (global-set-key [f7] 'split-window-vertically)
